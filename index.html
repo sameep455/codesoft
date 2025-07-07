@@ -1,39 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Simple Calculator</title>
-  <link rel="stylesheet" href="index.css">
+  <style>
+     ul li{
+      list-style-type:none;
+     }
+  </style>
+  <style>
+    body{
+      background-image: url(travel\ image.jpg);
+      background-repeat:no-repeat ;
+      background-size: cover;
+      position: relative;
+      background-position: center;
+      height: 100vh;
+      margin: 0;
+      padding:0;
+      margin-bottom: 15%;
+      }
+  </style>
+  <style>
+    h2{line-height: 0px;}
+  </style>
+<script src="https://kit.fontawesome.com/f9c49325e6.js" crossorigin="anonymous"></script>
+<link rel = "stylesheet" href="style.css">
 </head>
 <body>
-  <div class="calculator">
-    <input type="text" id="display" readonly>
-    <div class="buttons">
-      <button onclick="clearDisplay()">C</button>
-      <button onclick="appendValue('/')">/</button>
-      <button onclick="appendValue('*')">*</button>
-      <button onclick="deleteLast()">DEL</button>
-
-      <button onclick="appendValue('7')">7</button>
-      <button onclick="appendValue('8')">8</button>
-      <button onclick="appendValue('9')">9</button>
-      <button onclick="appendValue('-')">-</button>
-
-      <button onclick="appendValue('4')">4</button>
-      <button onclick="appendValue('5')">5</button>
-      <button onclick="appendValue('6')">6</button>
-      <button onclick="appendValue('+')">+</button>
-
-      <button onclick="appendValue('1')">1</button>
-      <button onclick="appendValue('2')">2</button>
-      <button onclick="appendValue('3')">3</button>
-      <button onclick="calculate()">=</button>
-
-      <button onclick="appendValue('0')" class="zero">0</button>
-      <button onclick="appendValue('.')">.</button>
-    </div>
+<div class="menu-bar">     
+<ul>
+<li>Home</li>
+<li>Hill stations</li>
+<li>Best offers</li>
+<li>Our sites</li>
+<li>Contact</li> 
+</ul>
+</div>
+  <div>
+  <ul>
+    <h1 class = "paragraph">TEN YEARS OF</h1>
+    <h2 class = "paragraph2">SUNSHINE TRAVEL</h2>
   </div>
-
-  <script src="index.js"></script>
+</ul>
+<div>
+  <p class = "paragraph5">Welcome to the official TEN Years Of SUNSHINE TRAVEL website.<br>
+    Discover the world with us!<br>
+     Our expertly curated tours and travel packages are designed<br>
+     to immerse you in the beauty,<br>
+      culture, and adventure of your dream destination.<br>
+       Whether you're seeking a relaxing beach gateaway,<br>
+        an exhilarating mountain trek, we offer personalized <br>
+         experiences that cater to every traveler's desires. <br>
+         Join us on a journey where unforgettable memories and <br>
+          extraordinary adventures await. Book your next adventure today!</p>
+</div>
+<ul>
+<div>
+<a href= "#" class = "register-btn">REGISTER</a>
+</div>
+</ul>
+<footer class = "footer">
+  <div class="icons">
+  <ul>
+    <a style="color: #0ac623;"href="#"><i class="fa-brands fa-instagram"></i></a> 
+    <a style="color: #595b60b5;"href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a style="color: floralwhite;"href="#"><i class="fa-brands fa-telegram"></i></a>
+  </ul>
+  </div> 
+  <div class="p1">
+  <pre> TOUR AND TRAVEL                                                         &copy;2024 Pages Of Travel                                              PRIVACY AND COOKIE POLICY</pre>
+  </div>
+</footer>
 </body>
 </html>
