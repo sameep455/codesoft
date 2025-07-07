@@ -1,74 +1,237 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <style>
-     ul li{
-      list-style-type:none;
-     }
-  </style>
-  <style>
-    body{
-      background-image: url(travel\ image.jpg);
-      background-repeat:no-repeat ;
-      background-size: cover;
-      position: relative;
-      background-position: center;
-      height: 100vh;
-      margin: 0;
-      padding:0;
-      margin-bottom: 15%;
-      }
-  </style>
-  <style>
-    h2{line-height: 0px;}
-  </style>
-<script src="https://kit.fontawesome.com/f9c49325e6.js" crossorigin="anonymous"></script>
-<link rel = "stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hey Friends welcome on my portfolio website. A anice palce to know about me.">
+    <title>Deepanshu Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-<div class="menu-bar">     
-<ul>
-<li>Home</li>
-<li>Hill stations</li>
-<li>Best offers</li>
-<li>Our sites</li>
-<li>Contact</li> 
-</ul>
-</div>
-  <div>
-  <ul>
-    <h1 class = "paragraph">TEN YEARS OF</h1>
-    <h2 class = "paragraph2">SUNSHINE TRAVEL</h2>
-  </div>
-</ul>
-<div>
-  <p class = "paragraph5">Welcome to the official TEN Years Of SUNSHINE TRAVEL website.<br>
-    Discover the world with us!<br>
-     Our expertly curated tours and travel packages are designed<br>
-     to immerse you in the beauty,<br>
-      culture, and adventure of your dream destination.<br>
-       Whether you're seeking a relaxing beach gateaway,<br>
-        an exhilarating mountain trek, we offer personalized <br>
-         experiences that cater to every traveler's desires. <br>
-         Join us on a journey where unforgettable memories and <br>
-          extraordinary adventures await. Book your next adventure today!</p>
-</div>
-<ul>
-<div>
-<a href= "#" class = "register-btn">REGISTER</a>
-</div>
-</ul>
-<footer class = "footer">
-  <div class="icons">
-  <ul>
-    <a style="color: #0ac623;"href="#"><i class="fa-brands fa-instagram"></i></a> 
-    <a style="color: #595b60b5;"href="#"><i class="fa-brands fa-twitter"></i></a>
-    <a style="color: floralwhite;"href="#"><i class="fa-brands fa-telegram"></i></a>
-  </ul>
-  </div> 
-  <div class="p1">
-  <pre> TOUR AND TRAVEL                                                         &copy;2024 Pages Of Travel                                              PRIVACY AND COOKIE POLICY</pre>
-  </div>
-</footer>
+    <!-- Header for website -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+          <i id="sharebtn" class='social bx bxs-share-alt '>share</i>
+        </nav>
+        <i class="bx bxs-moon bxs-sun" id="theme">light</i>
+    </header>
+
+    <!-- Home section Design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello it's me</h3>
+            <h1>Sameep</h1>
+            <h3>and I'm a <span class="multiple"></span></h3>
+            <p>This is my first Portfolio website. I will continuously Improving this for a better experience</p>
+            <div class="social-media">
+                <a href="" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com/_sameep_x?igsh=bmJvNXI1NjdobnB3&utm_source=qr" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="" target="_blank"><i
+                        class='bx bxl-whatsapp'></i></a>
+                <a href="" target="_blank"><i class='bx bxl-telegram'></i></a>
+            </div>
+            <a href="Resume.pdf" class="btn" download="">Download-Resume</a>
+        </div>
+        <div class="home-img">
+            <img src="WhatsApp Image 2025-07-07 at 15.41.42_fd240447.jpg" alt="Deepanshu">
+        </div>
+    </section>
+
+    <!-- about Section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/yt.png" alt="Deepanshu">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>me</span></h2>
+            <h3>Fronted Developer !</h3>
+            <p>With a Passion for science and a commitment to excellence, I proudly Passed my class 12th exams in 2023,
+                embarking on journey to unravel the wonders of the universe. |<span> ॐ नमः शिवाय </span>|</p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+    </section>
+
+    <!-- services section -->
+
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+
+        <div class="service-container">
+            <div class="service-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Currently I am focusing on Learning website Development. I can make some basic websites</p>
+                <button class="btn" onclick="readme('.webdev')">Read more</button>
+            </div>
+            <div class="service-box">
+                <i class='bx bxs-edit'></i>
+                <h3>video Editing</h3>
+                <p>I have Some Basic Knowledge of video Editing Using Diffrent tools such as Kinemaster etc.</p>
+                <button onclick="readme('.videoedit')" class="btn">Read more</button>
+            </div>
+            <div class="service-box">
+                <i class='bx bxs-business'></i>
+                <h3>Business Analytics</h3>
+                <p>I am currently Learning Business Analytics using Excel.So this service is currently unavailable.</p>
+                <button onclick="readme('.Business')" class="btn">Read more</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio design -->
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span class="port">Projects</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="/img/Screenshot (1).png" alt="Flipkart clone">
+                <div class="portfolio-layer">
+                    <h4>Flipkart Clone</h4>
+                    <p>In this website I try to make a clone of Flipkart website by Taking Help from youtube</p>
+                    <a href="https://deepanshuwebsite.netlify.app/" target="_blank"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="/img/html.jpg" alt="html certificate">
+                <div class="portfolio-layer">
+                    <h4>HTML</h4>
+                    <p>This is the Certificat of successfully compliting a html course on soloLearn MObile App</p>
+                    <a href="/img/html.jpg" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="/img/java.jpg" alt="JavaScript">
+                <div class="portfolio-layer">
+                    <h4>JavaScript</h4>
+                    <p>This is My Certificat for compliting javaScript Projects On Great Learning MObile App.</p>
+                    <a href="/img/java.jpg" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section design -->
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form id="con" name="contact" netlify>
+            <div class="input-box">
+                <input type="text" name="name" id="name" placeholder="Full Name" required>
+                <input type="email" name="email" required id="email" placeholder="Email address">
+            </div>
+            <div class="input-box">
+                <input type="tel" name="mobile" id="mobile" placeholder="Mobile number" required>
+                <input type="text" name="subject" id="subject" placeholder="Email Subject">
+            </div>
+            <textarea name="Message" id="mess" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <div class="sub">
+                <input type="checkbox" name="Subscribe">
+                <h3>Subscribe to our News Later !</h3>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- footer design  -->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <P>A Gift for my visitor</P>
+        </div>
+        <div class="footer-icon">
+            <a href="img/279.pdf" class="btn" download="Solution">Download</a>
+        </div>
+    </footer>
+
+    <!-- popup design -->
+    <div class="webdev popup">
+        <h1>Web Development</h1>
+        <div class="morecont">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti odio reiciendis, eaque commodi beatae
+            tempore reprehenderit dicta quam quisquam hic nam perferendis assumenda eos asperiores possimus! Adipisci,
+            unde fuga. Fugiat praesentium adipisci error ipsum delectus eaque animi est eos corrupti? Sint, omnis
+            deleniti quos cumque perspiciatis, sapiente laudantium ex magnam fugiat similique ullam eum id amet aliquam
+            distinctio, facilis alias molestias? Iusto magni, eum sed facere temporibus aut earum maxime ab ad, quasi
+            pariatur iste sapiente cumque quibusdam repellendus esse doloribus perspiciatis fuga, dicta nobis
+            blanditiis!
+        </div>
+        <div class="popbtn">
+            <a href="https://wa.link/0om1b6" class="btn">Contact <i class='bx bx-link-external'></i></a>
+            <button onclick="readme('.webdev')" class="btn">Close</button>
+        </div>
+    </div>
+
+    <div class="videoedit popup">
+        <h1>Video Editing</h1>
+        <div class="morecont">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti odio reiciendis, eaque commodi beatae
+            tempore reprehenderit dicta quam quisquam hic nam perferendis assumenda eos asperiores possimus! Adipisci,
+            unde fuga. Fugiat praesentium adipisci error ipsum delectus eaque animi est eos corrupti? Sint, omnis
+            deleniti quos cumque perspiciatis, sapiente laudantium ex magnam fugiat similique ullam eum id amet aliquam
+            distinctio, facilis alias molestias? Iusto magni, eum sed facere temporibus aut earum maxime ab ad, quasi
+            pariatur iste sapiente cumque quibusdam repellendus esse doloribus perspiciatis fuga, dicta nobis
+            blanditiis!
+        </div>
+        <div class="popbtn">
+            <a href="https://wa.link/4qfm7o" class="btn">Contact <i class='bx bx-link-external'></i></a>
+            <button onclick="readme('.videoedit')" class="btn">Close</button>
+        </div>
+    </div>
+
+    <div class="Business popup">
+        <h1>Business Analytics</h1>
+        <div class="morecont">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti odio reiciendis, eaque commodi beatae
+            tempore reprehenderit dicta quam quisquam hic nam perferendis assumenda eos asperiores possimus! Adipisci,
+            unde fuga. Fugiat praesentium adipisci error ipsum delectus eaque animi est eos corrupti? Sint, omnis
+            deleniti quos cumque perspiciatis, sapiente laudantium ex magnam fugiat similique ullam eum id amet aliquam
+            distinctio, facilis alias molestias? Iusto magni, eum sed facere temporibus aut earum maxime ab ad, quasi
+            pariatur iste sapiente cumque quibusdam repellendus esse doloribus perspiciatis fuga, dicta nobis
+            blanditiis!
+        </div>
+        <div class="popbtn">
+            <a href="https://wa.link/wpip9j" class="btn">Contact <i class='bx bx-link-external'></i></a>
+            <button onclick="readme('.Business')" class="btn">Close</button>
+        </div>
+    </div>
+
+    <!-- Share menu design -->
+
+    <div class="share">
+     <div class="close social"><i class='bx bx-x'></i></div>
+     <li style="--i:0; --clr:#000;"><i id="cop" class='bx bx-clipboard'></i></li>
+     <li style="--i:1; --clr:#25d366;"><i id="whatshare" class='bx bxl-whatsapp'></i></li>
+     <li style="--i:2; --clr:#1877f2;"><i id="facshare" class='bx bxl-facebook-circle'></i></li>
+     <li style="--i:3; --clr:#0077b5;"><i id="linshare" class='bx bxl-linkedin-square'></i></li>
+     <li style="--i:4; --clr:#0088cc;"><i id="telshare" class='bx bxl-telegram'></i></li>
+     <li style="--i:5; --clr:#1da1f2;"><i id="twishare" class='bx bxl-twitter'></i></li>
+    </div>
+
+    <!--scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typejs adding -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+    <!-- Java Script file linked -->
+    <script src="script.js"></script>
 </body>
+
 </html>
